@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>伪元素的使用</title>
+</head>
+<style>
+     .wrap:first-line{
+	   color:#F00;      /* 设置第一行的内容的属性*/
+	 }
+	 .wrap:first-letter{
+	   font-size:24px;     /*设置第一个元素的属性*/
+	 }
+	 span:first-child{    /* 设置span的第一个孩子标签的属性*/
+	  color:red;	 
+	 }
+	 .wrapuse:before, .wrapuse:after{ /* 在设置属性的标签元素前面和后面添加一个元素*/
+		 content:"-------";
+		 display:block;         /* 让当前伪元素的属性变为块级元素*/
+		 }
+</style>
+<body>
+  <p  class="wrap"> 描写荷塘的美文摘抄：又是一年荷塘色 初夏早上六点，清亮透明的月儿还躲藏在云朵里，不忍离去，校园内行人稀少，我骑着单车，晃晃悠悠的耷拉着星松的睡眼。校园内景色如常，照样是绿
+  </p>
+    <div>
+      <span>第一个span</span>
+      <span>第二个span</span>
+      <span>第三个span</span>
+    </div>
+    <p>
+       <span>第四个span</span>
+       <span>第五个span</span>
+    </p>
+    <p><hr></p>
+    <div  class="wrapuse">一个div</div>
+    <div><hr></div>   
+</body>
+</html>

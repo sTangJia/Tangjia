@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+ <!--a:link为设置没有被点击过的链接的颜色为红色
+ a:visited为设置被点击过的超级链接的颜色
+ a：hover为设置当鼠标移动到超级链接时显示的颜色（常用）
+ a:active为设置但鼠标一直单击时显示的颜色
+ a：focus为设置但按tab键时显示的效果 -->
+<meta charset="utf-8">
+<title>伪类的使用</title>
+   <style  >
+        a{
+		   font-size:24px
+	    }
+	    a:link {
+		   color:red;
+		   }
+		a:visited {
+		    color:#FF0;
+			}   
+		a:hover{
+			color:#F0C;
+			}
+		a:active{
+			 color:#3FF;
+			}
+		a:focus{
+			font-size:36px
+			}
+   </style>
+</head>
+<body>
+   <ul  class="">
+      <li><a href="#">普通的官网</a></li>
+      <li><a href="http://www.itcast.cn">传智官网</a></li>
+      <li><a href="http://www.baidu.com">百度官网</a></li>
+      <li><a href="http://www.jd.com">京东官网</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="GBK">
+  <meta name="Generator" content="EditPlus?">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>表单标签的使用</title>
+ </head>
+ <body>
+    <!--表单标签的使用，所有的表单标签必须包裹在表单标签中-->
+	<!--action 指向后台的地址-->
+	<!--type="text"表示文本框 -->
+	<!--type="radio"表示单选框-->
+	<!--type="checkbos 表示多选框"-->
+	<!--select 表示下拉列表 option表示下拉列表的表选项-->
+	<!--id=""multiple 表示展开的下拉列表 -->
+	<!--textarea表示文本域 -->
+	<!--reset 重置按钮，重置所有表单标签的内容-->
+	<!--button 普通按钮-->
+	<!--sbumit 注册按钮-->
+     <form action="#">
+	  用户名：<input type="text" value="123">  </br>
+	  性别：男<input type="radio",checked="checked" name="gender"> 女<input name="gender", type="radio"><br>
+	  性别：男<input type="checkbox"><input type="checkbox">
+	  密码：  <input type="password"> <br>
+             <select name="日历" id="">
+			      <option value="2">公历</option>
+				  <option value="1" checked>农历</option>
+			 </select>   <br><br><br>
+             <select name="" id=""multiple>
+			    <option value="1">公历</option>
+				<option value="2" checked>农历</option>
+				<option value="2" checked>农历</option>
+				<option value="2" checked>农历</option>
+			 </select>   <br>
+
+	      	 <textarea rows="10" ,cols="10">
+			 </textarea>
+	 </form>
+  </body>
+</html>
+
